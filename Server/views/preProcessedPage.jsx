@@ -24,7 +24,7 @@ function Entry({url, title, score, pr, id, domain}){
   return (
     <>
       <div className = "entry" style = {entry}>
-        <a href = {serverURL + domain + "/" + id} className = "link" style = {link}>
+        <a href = {serverURL + "/" + domain + "/" + id} className = "link" style = {link}>
           {title}
         </a>
         <div>
