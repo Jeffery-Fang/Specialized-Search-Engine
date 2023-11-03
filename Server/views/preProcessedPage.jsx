@@ -14,7 +14,7 @@ const link = {
   "fontSize": "20px"
 }
 
-let serverURL = '134.117.129.37:3000'
+let serverURL = 'http://134.117.129.37:3000'
 
 function Entry({url, title, score, pr, id, domain}){
   /*
