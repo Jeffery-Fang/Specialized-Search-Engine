@@ -14,7 +14,7 @@ const link = {
   "fontSize": "20px"
 }
 
-let serverURL = 'http://localhost:3000'
+let serverURL = '134.117.129.37:3000'
 
 function Entry({url, title, score, pr, id, domain}){
   /*
@@ -24,7 +24,7 @@ function Entry({url, title, score, pr, id, domain}){
   return (
     <>
       <div className = "entry" style = {entry}>
-        <a href = {"http://localhost:3000/" + domain + "/" + id} className = "link" style = {link}>
+        <a href = {serverURL + domain + "/" + id} className = "link" style = {link}>
           {title}
         </a>
         <div>

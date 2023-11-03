@@ -267,7 +267,7 @@ app.get("/fruits", async function(req, res){
 
     res.format({
         'html' : () => {
-            res.status(200).render("preProcessedPage", {preProcessedResults: out, domain: "fruits"});
+            res.status(200).render("preProcessedPage", {preProcessedResults: out, domain: "/fruits"});
         },
 
         'json' : () => {
@@ -456,7 +456,7 @@ app.get("/personal", async function(req, res){
 
     res.format({
         'html' : () => {
-            res.status(200).render("preProcessedPage", {preProcessedResults: out, domain: "personal"});
+            res.status(200).render("preProcessedPage", {preProcessedResults: out, domain: "/personal"});
         },
 
         'json' : () => {
