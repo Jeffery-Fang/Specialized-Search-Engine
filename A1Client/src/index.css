@@ -1,0 +1,18 @@
+.entry{
+  text-align: left;
+  margin:5px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: 1px;
+}
+
+.link{
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.searchBar{
+  margin:5px;
+  
+}
