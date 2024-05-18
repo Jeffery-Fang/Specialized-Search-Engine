@@ -314,7 +314,7 @@ app.get("/fruits/:id", async function(req, res){
                 }
             )
             
-            res.render("dataPage", {url: url, title: title, pr: pr, inLinks: inLinks, outLinks: outLinks, wordFrequency: wordFrequency});
+            res.render("dataPage", {url: url, title: title, pr: pr, inLinks: inLinks, outLinks: outLinks, wordFrequency: wordFrequency, content: page.content});
         }
     ).catch();
 });
@@ -503,7 +503,7 @@ app.get("/personal/:id", async function(req, res){
                 }
             )
             
-            res.render("dataPage", {url: url, title: title, pr: pr, inLinks: inLinks, outLinks: outLinks, wordFrequency: wordFrequency});
+            res.render("dataPage", {url: url, title: title, pr: pr, inLinks: inLinks, outLinks: outLinks, wordFrequency: wordFrequency, content: page.content});
         }
     ).catch();
 });

@@ -1,20 +1,6 @@
 var React = require('react');
 
-const entry = {
-  "textAlign": "left",
-  "margin": "5px",
-  "outlineStyle": "solid",
-  "outlineColor": "black",
-  "outlineWidth": "1px",
-}
-
-const link = {
-  "color": "black",
-  "textDecoration": "none",
-  "fontSize": "20px"
-}
-
-let serverURL = 'http://134.117.129.37:3000'
+let serverURL = 'http://localhost:3000';
 
 function Entry({url, title, score, pr, id, domain}){
   /*
@@ -23,15 +9,21 @@ function Entry({url, title, score, pr, id, domain}){
 
   return (
     <>
-      <div className = "entry" style = {entry}>
-        <a href = {serverURL + "/" + domain + "/" + id} className = "link" style = {link}>
-          {title}
-        </a>
-        <div>
-          URL: {url} <br />
-          score: {score} <br />
-          page rank: {pr} <br />
-        </div>
+      <div className = "container-fluid border border-dark rounded">
+        <div className = "vstack p-2">
+          <a href = {serverURL + "/" + domain + "/" + id} className = "h5 row link-underline link-underline-opacity-0">
+            {title}
+          </a>
+          <div className = "row">
+            URL: {url}
+          </div>
+          <div className = "row">
+            score: {score}
+          </div>
+          <div className = "row">
+            page rank: {pr}
+          </div>
+        </div>  
       </div>
     </>
   );
@@ -53,10 +45,13 @@ function Results(props){
 
   return (
     <>
-      <div>
-        <b style = {link}> Results: </b> <br />
-        {searchResults}
+      <div className = "p-2">
+        <div className = "vstack gap-1">
+          {searchResults}
+        </div>
       </div>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossOrigin="anonymous"/>
     </>
   );
 }
