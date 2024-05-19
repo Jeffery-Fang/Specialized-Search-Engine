@@ -46,6 +46,20 @@ The search engine uses a database that you will not have access to so in order t
     ```
 ## Gallery & Demonstrations
 
+![Screenshot 2024-05-18 230719](https://github.com/Jeffery-Fang/Specialized-Search-Engine/assets/126544955/4173130c-9055-462d-9dee-0a4bd9a9049a)
+
+*Search screen with results*
+<br />
+
+![Screenshot 2024-05-18 230831](https://github.com/Jeffery-Fang/Specialized-Search-Engine/assets/126544955/6bbf3056-9ec9-479f-a631-da9e1908d915)
+
+*Info page for a particular result*
+<br />
+
+https://github.com/Jeffery-Fang/Specialized-Search-Engine/assets/126544955/fbfde4dc-09f2-413c-b4e7-29b5a966600a
+
+*Video Demonstration*
+<br />
 
 ## Tools & Technologies
 
