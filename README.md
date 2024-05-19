@@ -1,12 +1,10 @@
-<br />
-
 <h3>
     About The Project
 </h3>
 
 ---
 
-A search engine that provides results from pages that I've crawled beforehand. The results are based the internal scoring of elasticlunr as well as the page rank of the page.
+A search engine that provides results from pages that I've crawled beforehand. The results are based on the internal scoring of elasticlunr as well as the page rank of the page.
 
 ### Prerequisite
 
@@ -16,7 +14,7 @@ The search engine uses a database that you will not have access to so in order t
 
 1. Clone this repository
     ```sh
-    git clone https://github.com/Jeffery-Fang/PersonalWebsite.git
+    git clone https://github.com/Jeffery-Fang/Specialized-Search-Engine.git
     ```
 
 2. Install NPM packages
